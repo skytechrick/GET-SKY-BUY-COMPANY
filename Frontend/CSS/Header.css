@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(244, 244, 244);
+}
+* {
+    box-sizing: border-box;
+
+}
+.Header {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 0 6px #ff40cc;
+}
+.Cennttttttt {
+    width: 90vw;
+    margin: auto;
+    height: 100%;
+
+}
+.ImageAndH1 {
+    /* border: 1px solid; */
+    display: flex;
+    height: 100%;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    flex-direction: row;
+}
+.ImageAndH1 a{
+    text-decoration: none;
+}
+#Logo1 img{
+    position: relative;
+    top: 3px;
+    width: 53px;
+}
+
+#HeadingNav2 {
+    color: #fb14ff;
+    /* font-style: italic; */
+    
+}
+#HeadingNav2Center {
+    display: block;
+    /* border: 1px solid; */
+}
+#HeadingNav2Center h1{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 6px;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+
+.Exploresnow {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(28, 0, 210);
+    font-weight: bold;
+    text-shadow: 0 0 4px #d7d7d7;
+    position: relative;
+    bottom: 3px;
+}
+
+.ExploresnowImge img{
+    position: relative;
+    top: 2px;
+    width: 18px;
+
+}
+
+
+
+
+
