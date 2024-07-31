@@ -15,6 +15,8 @@ body {
     box-shadow: 0 0 6px #ff40cc;
 }
 .Cennttttttt {
+    display: flex;
+
     width: 90vw;
     margin: auto;
     height: 100%;
@@ -24,6 +26,7 @@ body {
     /* border: 1px solid; */
     display: flex;
     height: 100%;
+    /* width: 232px; */
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     flex-direction: row;
@@ -53,6 +56,7 @@ body {
     top: 6px;
     font-size: 28px;
     letter-spacing: -1px;
+    width: 179px;
 }
 
 
@@ -72,6 +76,302 @@ body {
     width: 18px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SearchStart {
+    margin-left: 10px;
+    min-width: 200px;
+    max-width: 600px;
+    width: 100%;
+    height: 60px;
+    /* background-color: #fb14ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainSearchBox {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #fb14ff;
+
+    border-radius: 50px;
+    
+}
+
+.MainSearchBox form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+#Search_Type {
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 4px;
+    height: 43px;
+    border: none;
+    border-right: 1px solid #fb14ff;
+    cursor: pointer;
+    width: 50px;
+    outline: none;
+    text-align: center;
+    background-color: #feb1ff;
+    transition: 200ms background-color;
+}
+
+#Search_Type:hover {
+    background-color: #fd8fff;
+    
+}
+#Search_Type:active {
+    background-color: #fd6eff;
+
+}
+#Search_Type:focus {
+    background-color: #fd8fff;
+
+}
+#Search_Type option{
+    padding: 0px;
+    background-color: white;
+}
+
+#Search_Input {
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+    /* border-right: 1px solid; */
+    width: calc(100%  - 50px);
+    width: 100%;
+
+}
+
+#Clear_Search, #Submit_Button {
+    outline: none;
+    border: none;
+    width: 45px;
+    background-color: white;
+}
+
+#Clear_Search span{
+    /* width: 50px;
+    height: 50px; */
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px 11px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+#Clear_Search span:hover{
+    
+    background-color: #dbdbdb;
+}
+
+#Submit_Button {
+    width: 50px;
+    background-color: #feb1ff;
+    border-left: 1px solid #fb14ff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    transition: 200ms background-color;
+}
+
+#Submit_Button span{
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    right: 2px;
+    top: 2px;
+    /* padding: 8px 11px; */
+    cursor: pointer;
+    /* font-size: 20px; */
+
+}
+
+
+
+
+
+#Submit_Button:hover {
+    background-color: #fd8fff;
+    
+}
+#Submit_Button:active {
+    background-color: #fd6eff;
+
+}
+#Submit_Button:focus {
+    background-color: #fd8fff;
+
+}
+
+.Sesessasfsafsfasff {
+    
+    width: calc(100%  - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Nav {
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Nav ul{
+    width: 100%;
+    padding: 0;
+    padding: 0 5px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+.Nav_Btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav_Btn:hover {
+    text-shadow: 0 0 1px #fb14ff;
+}
+.Nav_Btn span:nth-child(2):hover {
+    text-shadow: 0 0 1px #fb14ff;
+    text-decoration: underline;
+}
+
+
+.gfd {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

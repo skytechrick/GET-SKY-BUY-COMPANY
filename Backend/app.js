@@ -31,4 +31,4 @@ app.get("/", require("./WebPage/Home.js"));
 
 
 
-app.listen(process.env.Port,()=>{ console.log("Node JS Server is running on the Port 80\nLink: http://192.168.0.12/")})
+app.listen(process.env.Port,()=>{ console.log("Node JS Server is running on the Port 80\nLink: http://localhost/")})
