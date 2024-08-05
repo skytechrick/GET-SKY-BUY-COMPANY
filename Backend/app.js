@@ -19,12 +19,14 @@ app.use(cookieParser());
 
 
 app.use('/files/css', express.static('../Frontend/CSS'));
+app.use('/files/js', express.static('../Frontend/JS'));
 app.use('/files/img', express.static('../Frontend/IMG'));
 
 app.get("/", require("./WebPage/Home.js"));
 
 
 
+// app.get("/", require("./WebPage/Home.js"));
 
 
 

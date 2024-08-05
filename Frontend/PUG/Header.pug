@@ -1,27 +1,30 @@
 <link rel="stylesheet" href="/files/css/Header.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div id="BackgroundBlur"></div>
+
 <header class="Header" id="Header">
     <div class="Cennttttttt">
-
+        <div id="Menuasfsafafsafsa">
+            <button type="button" onclick="OpenMenu()">
+                <span id="Menu_Icon" class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
         <div class="ImageAndH1">
             <a id="Logo1" href="/?Source=Nav_Logo">
-                <img src="/files/img/GSB_Logo.png" alt="GET SKY BUY Logo">
+                <img src="/files/img/GSB-Full-Logo.webp" alt="GET SKY BUY Logo">
             </a>
             <a id="HeadingNav2" href="/?Source=Nav_Heading">
                 <div id="HeadingNav2Center">
                     <h1 title="GET SKY BUY | Website">GET SKY BUY</h1>
                     <span class="Exploresnow">Explore now</span>
-                    <span class="ExploresnowImge"><img src="/files/img/GSB_Logo.png" alt="GET SKY BUY Logo"></span>
+                    <span class="ExploresnowImge"><img src="/files/img/GSB-Full-Logo.webp" alt="GET SKY BUY Logo"></span>
                 </div>
             </a>
         </div>
-
         <div class="SearchStart">
-
             <div class="MainSearchBox">
-
                 <form action="/search" method="get">
-
                     <select name="Search_Type" id="Search_Type">
                         <option value="All">All</option>
                         <option value="Men dresses">Men dresses</option>
@@ -32,56 +35,103 @@
                         <option value="Electronics">Electronics</option>
                     </select>
                     <div class="Sesessasfsafsfasff">
-                        <input id="Search_Input" type="text" placeholder="Search for product, shop or ID" autocomplete="off" spellcheck="false" name="Search">
+                        <input id="Search_Input" type="text" placeholder="Search for Product, Shops or ID" autocomplete="off" spellcheck="false" name="Search">
                     </div>
                     <button id="Clear_Search" type="reset"><span>&#x2715;</span></button>
                     <button id="Submit_Button" type="submit"><span class="material-symbols-outlined">search</span></button>
-                    
-
+                    <div id="SearchResult"></div>
                 </form>
             </div>
-            
         </div>
-
-        <div class="Nav">
-            <ul>
+        <div id="jdasdkjjfjdf">
+            <button class="Nav_Btn" type="button" onclick="NavClicked(5)">
+                <span class="material-symbols-outlined gfd">shopping_cart</span>
+                <span id="CSfsfsdffsddhlsfhk">Cart</span>
+                <span id="CartNumber1">0</span>
+            </button>
+        </div>
+        <div id="Nav" class="Nav">
+            <ul id="NavUl">
+                <div class="CloseBtnMenu"><button type="button" onclick="CloseMenu()"><span class="material-symbols-outlined">close</span></button></div>
+                <li class="LOOOOGO" style="margin-bottom: 20px;">
+                    <a href="/" title="GET SKY BUY - Home">
+                        <img src="/files/img/GSB-Full-Logo.webp" alt="GSB LOGO">
+                    </a>
+                </li>
+                <li class="NavList" id="Homeeeee">
+                    <button class="Nav_Btn" type="button" onclick="NavClicked(99)">
+                        <span class="material-symbols-outlined gfd">home</span>
+                        <span>Home</span>
+                    </button>
+                </li>
                 <li class="NavList">
                     <button class="Nav_Btn" type="button" onclick="NavClicked(1)">
                         <span class="material-symbols-outlined gfd">store</span>
                         <span>Store/Shop</span>
                     </button>
                 </li>
-                <li class="NavList">
-                    <button class="Nav_Btn" type="button" onclick="NavClicked(2)">
+                <li id="Profile_List" class="NavList">
+                    <button class="Nav_Btn" type="button">
                         <span class="material-symbols-outlined gfd">person</span>
                         <span>Profile</span>
                     </button>
+                    <div id="Profile_Box">
+                        <a title="Profile" href="/profile">Profile</a>
+                        <a title="Order" href="/order">Order</a>
+                        <a title="Return - Refund" href="/return_refund">Return/Refund</a>
+                        <a title="Cart" href="/cart">Cart</a>
+                        <a title="Favourite" href="/favourite">Favourite</a>
+                        <a title="Wishlist" href="/wishlist">Wishlist</a>
+                        <a title="GSB - Coins" href="/coins">GSB - Coins</a>
+                        <a title="Notification" href="/Notification">Notification</a>
+                        <a title="Setting" href="/setting">Setting</a>
+                        <a title="Logout" href="/logout">Logout</a>
+                    </div>
                 </li>
-                <li class="NavList">
-                    <button class="Nav_Btn" type="button" onclick="NavClicked(3)">
-                        <span class="material-symbols-outlined gfd">arrow_drop_down</span>
+                <li id="More_List" class="NavList">
+                    <button class="Nav_Btn" type="button">
+                        <span class="material-symbols-outlined gfd">expand_more</span>
                         <span>More</span>
                     </button>
+                    <div id="More_Box">
+                        <a title="Profile" href="/download_app">Download app</a>
+                        <a title="Profile" href="/help_center">Help center</a>
+                        <a title="Profile" href="/contact_us">Contact us</a>
+                        <a title="Profile" href="/improve_us">Improve us</a>
+                        <a title="Setting" href="/setting">Setting</a>
+                        <a title="Profile" href="/customer_care">Customer care</a>
+                        <a title="Profile" href="/privacy_and_policy">Privacy & policy</a>
+                        <a title="Profile" href="/terms_and_conditions">Terms & conditions</a>
+                        <a id="Sdasdalhdjshjfhasbf" title="Profile" href="/register_a_complaint">File a complaint</a>
+                        <a title="Profile" href="/report_a_problem">Report a problem</a>
+                    </div>
                 </li>
-                <li class="NavList">
+                <li id="Favourite_List" class="NavList">
                     <button class="Nav_Btn" type="button" onclick="NavClicked(4)">
                         <span class="material-symbols-outlined gfd">favorite</span>
                         <span>Favourite</span>
                     </button>
                 </li>
-                <li class="NavList">
+                <li id="Setting_List" class="NavList">
+                    <button class="Nav_Btn" type="button" onclick="NavClicked(98)">
+                        <span class="material-symbols-outlined gfd">settings</span>
+                        <span>Setting</span>
+                    </button>
+                </li>
+                <li class="NavList" id="CartButton">
                     <button class="Nav_Btn" type="button" onclick="NavClicked(5)">
                         <span class="material-symbols-outlined gfd">shopping_cart</span>
                         <span>Cart</span></button>
-                        <!-- <span>0</span> -->
+                        <span id="CartNumber">0</span>
                     </button>
                 </li>
             </ul>
-
         </div>
 
-
+        <!-- Nect nav part -->
     </div>
-
 </header>
+<!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ratione eos sint fuga aliquid magni? Distinctio voluptatum, natus illum dolores in impedit ut hic, numquam accusamus quisquam est, nam culpa. Ducimus maxime quisquam accusamus accusantium officia quas aperiam atque consequuntur delectus aut provident soluta, voluptatem iure! Sequi non voluptatem quaerat ea officiis hic aliquam! Assumenda illo rerum, ullam, laboriosam sunt dicta numquam soluta voluptas culpa repellendus cum quae deleniti, porro recusandae nisi. Nostrum, ex? Delectus facilis non nihil a suscipit officia, animi adipisci iure voluptatum expedita quos labore, doloremque alias cupiditate veniam assumenda? Velit voluptas ratione nulla? Temporibus tempora, eveniet modi rem non vitae magnam porro, illum commodi exercitationem earum debitis vero voluptatem nostrum minima. Accusamus officiis quo suscipit, labore magni natus facilis repellendus eum velit. Consectetur, accusantium adipisci? Provident est a beatae deserunt laborum, iure autem atque quia explicabo ipsa voluptatum nulla. Suscipit sapiente, minima commodi soluta nam vitae voluptatum id ducimus voluptatem odio quisquam itaque illo quis fugiat magni? Optio sit, quia et rerum vero, hic molestias dolor nihil itaque ipsum in tenetur nisi. Maxime dolores ad aliquam ducimus quisquam quae. Minima deserunt minus porro tempora, nam, sint maiores nihil sunt quas, necessitatibus corrupti? Earum suscipit dolorem adipisci laudantium pariatur, qui id corrupti voluptas vitae et itaque sequi soluta labore ratione velit? Necessitatibus modi suscipit recusandae culpa vero perspiciatis accusamus ducimus numquam exercitationem. Eum veniam dolorem officia, sit nam sint assumenda asperiores iusto facilis tenetur eius similique. Obcaecati iure provident omnis tenetur, autem dolor eos minus ullam possimus reprehenderit odio perspiciatis minima, est iusto labore distinctio accusamus. Veniam, earum! Illum, est. Commodi dolorem vitae, nulla facere sed eum corporis aut atque dolorum nostrum rerum est saepe dolor necessitatibus, debitis omnis animi beatae dolores, incidunt fugiat eligendi. Eum amet delectus quo dicta neque, sit dignissimos perferendis cum? Beatae nostrum sunt minima ipsa, consectetur dignissimos illo sapiente quidem maxime amet ratione voluptatem animi odio ut, quod deleniti. Dicta illum pariatur eum impedit nihil quisquam ad vitae aliquid unde culpa. Inventore dolor aspernatur esse hic ipsum veniam, impedit eveniet iure, soluta, necessitatibus commodi excepturi assumenda laudantium nesciunt repellendus ducimus nobis asperiores alias expedita sint exercitationem. Harum odit temporibus itaque, ratione quidem deserunt voluptatibus. Incidunt, accusantium? A quo placeat, voluptate necessitatibus ad obcaecati, quaerat nam iste aspernatur tempora nulla dignissimos voluptatum cupiditate officiis quam excepturi repellendus fugiat adipisci non corrupti temporibus rem repudiandae? Iusto veritatis dignissimos consequuntur quisquam officia, minus ipsum sit id architecto optio quae incidunt expedita animi ut reiciendis repellat alias modi fugit error laudantium. Fugit itaque aut sint non ea beatae sapiente dolore, nulla veniam? Voluptas nam ipsum iste vitae eveniet? Rerum aperiam, voluptates natus incidunt esse nemo. Omnis quos cum perspiciatis laudantium, maiores ad commodi? Corrupti quae deserunt hic voluptates expedita minima dolor veniam debitis dolorem voluptas harum maxime in labore adipisci eligendi atque aspernatur pariatur cumque quasi tenetur accusantium neque, odio quidem? Tenetur, cumque nostrum repellat commodi optio fugit sint minus vero nobis laboriosam harum eligendi excepturi nam ad alias voluptates? Numquam vitae maiores voluptatum aut, ab exercitationem facere vero excepturi asperiores obcaecati earum quos labore iste magni omnis est voluptatem sint. Numquam eum porro maiores eaque molestias, earum eos omnis perferendis quae similique velit, obcaecati dolores! Ad molestiae iste repellat et! Esse amet eligendi aut alias maxime, cumque ipsam quia voluptate! Iste natus quo sint! Modi pariatur perferendis blanditiis unde! Nihil rem, aliquam possimus quo doloremque quaerat. Iure quis blanditiis qui eum a, facere nisi ratione nostrum debitis. Blanditiis unde libero pariatur recusandae. Dignissimos, laudantium dolorem adipisci ea inventore ab incidunt quis nostrum numquam provident doloribus? Eum dicta ab ducimus. Rem, cum aut. Mollitia eos earum nostrum est! Ratione aspernatur eaque, quidem quam tempore officia, hic natus harum, voluptatum doloremque accusamus provident quo. Tempore harum fuga molestiae, dolor voluptas beatae ipsa dignissimos a. Et, at. In, neque. Iusto, ex incidunt dolores quibusdam vitae possimus fugiat quae animi alias quis qui nesciunt ratione voluptatem eaque laborum, excepturi fuga eligendi maxime adipisci ad nihil aliquid modi illo. Temporibus doloremque error perspiciatis nemo enim expedita soluta harum cum iste. Quam nostrum quaerat odit unde veniam fugit expedita atque labore molestiae totam magnam earum ipsam cum placeat aspernatur accusamus optio doloribus, doloremque nisi magni perspiciatis distinctio iste accusantium eius! Consequatur facilis dolores quam dolor aliquam autem! Dicta commodi aliquam cupiditate fugit, odio consequatur! Incidunt illo fugiat eveniet nemo dolores, molestiae eaque voluptatem aliquam, vitae quidem saepe sint ab ducimus consequuntur quam perferendis libero harum accusamus, est voluptate quas perspiciatis tenetur deleniti repellendus? Blanditiis eum officiis ratione ducimus maxime at unde vel beatae! Ullam et, maxime obcaecati ipsum ea quae, corporis dolores quam mollitia unde molestias corrupti quaerat magni, amet omnis. Sed ipsa officiis ad dignissimos temporibus corporis id adipisci, architecto, tempore deleniti sint possimus dolorem hic sunt. Officiis nisi animi soluta, quae voluptates, quod nam dolorem velit suscipit, omnis sapiente.</p> -->
 
+
+<script src="/files/js/Header.js"></script>
