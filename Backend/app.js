@@ -2,13 +2,12 @@
 require('dotenv').config();
 
 const express = require("express");
+const app = express();
 const path = require("path");
-
 const multer = require("multer");
 const cookieParser = require('cookie-parser');
-
 const bodyParser = require("body-parser");
-const app = express();
+
 
 app.set("views", path.join(__dirname, "../Frontend/PUG"));
 app.set("view engine", "pug");
@@ -26,8 +25,9 @@ app.get("/", require("./WebPage/Home.js"));
 
 
 
-// app.get("/", require("./WebPage/Home.js"));
+app.get("/signup", require("./Signup_Login/Signup_Get.js"));
 
+app.post("/signup", require("./Signup_Login/Signup_Post.js"));
 
 
 
